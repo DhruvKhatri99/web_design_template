@@ -1,0 +1,278 @@
+/* global styles  */
+:root {
+  --purple: #c026d3;
+  --gradient: #701a75;
+}
+
+body {
+  font-family: "Roboto", sans-serif !important;
+  margin: 0%;
+  padding: 0%;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  color: #93048a;
+}
+
+/* hover effect on anchor tag */
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #93048a;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+
+h1 {
+  background: linear-gradient(to right, #c026d3, #701a75);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  font-weight: 800;
+  font-size: 4.5rem;
+  line-height: 5rem;
+}
+
+h2 {
+  background: linear-gradient(to right, #c026d3, #701a75);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 3.85rem;
+}
+
+p {
+  line-height: 2.25rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  color: #475569;
+}
+
+/* header/navbar section css  */
+
+nav .nav-link {
+  color: #0f172a;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 550 !important;
+}
+nav button {
+  background-color: var(--purple);
+  border-radius: 1.1rem;
+  color: white;
+  border: 2px;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+/* hero section css */
+
+#hero button {
+  background-color: var(--purple);
+  color: white;
+  border: 2px;
+  border-radius: 1.58rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+#hero input {
+  border-radius: 26px;
+  border: 1px solid #cbd5e1;
+  width: 30vw !important;
+}
+
+/* get better everyday section css */
+
+#get_better button {
+  background-color: var(--purple);
+  color: white;
+  border: 2px;
+  border-radius: 1.58rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+/* Stories from our user section css */
+
+.card-body span {
+  /* for promoted label on first card */
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  color: #1e40af;
+  background-color: #dbeafe;
+  font-size: 0.9rem;
+  font-weight: 400;
+  border-radius: 3px;
+}
+.image1 {
+  /* for user photo in card */
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+.card-title {
+  font-size: 1rem !important;
+}
+.card-text {
+  font-size: 0.85rem;
+}
+.card p {
+  line-height: 1.3rem;
+  text-align: unset;
+}
+
+/* testimonial section css */
+
+#testimonials {
+  background-image: url(../assets/img/what\ other\ users\ say.png);
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.9rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card h5 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #0f172a;
+  line-height: 2.2rem;
+}
+.testimonial-card p {
+  color: #0f172a;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.testimonial-card .user-info {
+  text-align: center;
+  margin-top: 1.25rem;
+}
+.testimonial-card .user-info img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.testimonial-card .user-info .name {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+.testimonial-card .user-info .position {
+  color: #475569;
+  font-size: 1rem;
+  font-weight: 400;
+}
+/* testimonial carousel left and right button css */
+.button {
+  background-color: white;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#testimonials button {
+  border: none;
+}
+
+/* your favourite tools section css*/
+
+.tool-card h5 {
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 5%;
+}
+
+.tool-card p {
+  color: #475569;
+  font-size: 1.1rem;
+  text-align: left !important;
+}
+
+/* Frequently asked question(FAQ) section css */
+
+#faq-section {
+  background-color: #f1f5fd;
+  padding: 60px 0;
+}
+
+#faqAccordion p>button {
+  color: #0f172a;
+  font-weight: 500 ;
+  font-size: 1.25rem;
+  line-height: 1.4rem;
+  transition: transform 0.3s ease;
+}
+
+
+
+
+
+/* footer section css */
+
+footer h5 {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #475569;
+  text-align: left !important;
+}
+
+footer p {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left !important;
+  margin: auto !important;
+}
+footer a {
+  color: #475569 !important;
+}
+
+.foot image {
+  text-align: left !important;
+}
+
+.foot span {
+  color: #475569;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.foot li {
+  font-size: 1.5rem;
+}
+
+
+/* change in font size in small screen */
+@media (max-width: 768px) {
+  html {
+    font-size: 12px; /* This makes 1rem = 12px */
+  }
+}
+
+/* button hover effect */
+button:hover {
+  transform: scale(1.05); /* Scale up the button on hover */
+}
